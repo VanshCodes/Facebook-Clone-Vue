@@ -11,11 +11,6 @@ let app = createApp(App)
   .use(router)
   .use(store);
 
-// app = new Vue({
-//   router,
-//   store,
-//   render: (h) => h(App),
-// });
 primeVueInit(app);
 app.config.productionTip = false;
 

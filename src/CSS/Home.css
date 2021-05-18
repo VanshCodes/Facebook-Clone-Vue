@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+  grid-template-areas: "messenger stories events";
+  grid-column-gap: 0;
+}
+.messanger {
+  grid-area: messenger;
+}
+.stories {
+  grid-area: stories;
+}

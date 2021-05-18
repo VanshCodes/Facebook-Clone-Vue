@@ -1,5 +1,7 @@
 // {/* <i class:""></i> */}
 // {/* <i class:""></i> */}
+export const ImageList = ["https://picsum.photos/100/200"];
+
 export const NavBarItems = [
   {
     // label: "Quit",1

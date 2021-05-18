@@ -1,25 +1,24 @@
 <template>
   <div class="home">
     <div class="grid">
-      <Messenger> </Messenger>
+      <Messenger />
+      <Stories />
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import Messenger from "@/components/Messenger/Messenger.vue";
+import Stories from "@/components/Stories.vue";
 
+import "@/CSS/Home.css";
 export default {
   name: "Home",
   components: {
     Messenger,
+    Stories,
   },
 };
 </script>
 <style>
-.grid {
-  display: grid;
-  grid-template-areas: "messenger";
-}
 </style>
