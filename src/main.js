@@ -5,7 +5,7 @@ import primeVueInit from "@/helper/prime.helper.js";
 import router from "./router";
 // import { auth } from "@/firebase/config";
 import store from "./store";
-import "@/assets/global.css";
+import "@/CSS/global.css";
 // import { mapMutations } from "vuex";
 let app = createApp(App)
   .use(router)

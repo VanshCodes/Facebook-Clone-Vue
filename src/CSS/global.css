@@ -24,15 +24,16 @@ li.li-menu-child {
 .text-black {
   color: black;
 }
-::-webkit-scrollbar {
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
-
-/* Hide scrollbar for IE, Edge and Firefox */
-:root {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+
 /* COLORFULL SCROLL */
 /* ::-webkit-scrollbar {
   width: 14px;

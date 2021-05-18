@@ -6,9 +6,11 @@
     </template>
 
     <template #content>
-      <div class="p-grid p-flex-column">
-        <SmallMsgBox :key="index" v-for="(i, index) in num" />
-      </div>
+      <main class="content scrollbar-hidden">
+        <div class="p-grid p-flex-column content-card">
+          <SmallMsgBox :key="index" v-for="(i, index) in num" />
+        </div>
+      </main>
     </template>
   </Card>
 </template>
@@ -29,13 +31,18 @@ export default {
 
 <style scoped>
 .p-card {
+  --height-messenger: 20vw;
+
   width: 20vw;
-  height: 30vw;
-  overflow-y: scroll;
+  height: var(--height-messenger);
 }
 .messenger {
   background-color: var(--primary-color-text);
-  border-radius: 15% 10% 10% 10%;
+  border-radius: 1rem; /* 15% 10% 10% 10% */
   box-shadow: 5px 5px 5px black;
+}
+.content {
+  height: calc((70 / 100) * var(--height-messenger));
+  overflow-y: scroll;
 }
 </style>

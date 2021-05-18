@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="grid">
-      <Messenger :classm="mess"> </Messenger>
+      <Messenger> </Messenger>
     </div>
   </div>
 </template>
@@ -11,7 +11,6 @@
 import Messenger from "@/components/Messenger/Messenger.vue";
 
 export default {
-  
   name: "Home",
   components: {
     Messenger,
@@ -21,8 +20,6 @@ export default {
 <style>
 .grid {
   display: grid;
-  grid-template-areas:
-    "menu main main main right right"
-    "menu footer footer footer footer footer";
+  grid-template-areas: "messenger";
 }
 </style>
