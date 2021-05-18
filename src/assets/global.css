@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --primary-text-color: white;
+  --icon-width: clamp(40px, 50px, 60px);
+}
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--surface-a); /* FROM PRIMEVUE VARS */
+  font-weight: 400;
+}
+* {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
+}
+li.li-menu-child {
+  white-space: nowrap;
+  width: auto !important;
+}
+
+.text-black {
+  color: black;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+:root {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* COLORFULL SCROLL */
+/* ::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 9px;
+} */
